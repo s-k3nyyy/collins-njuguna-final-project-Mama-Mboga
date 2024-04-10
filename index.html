@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mama mboga Grocery Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- linking  font awesome for icons-->
+  <script src="https://kit.fontawesome.com/2de799230c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo"> <i class="fa-solid fa-basket-shopping"></i> </a><span class="Mama">Mama Mboga</span>
+  </header>
+
+  <nav class="nav-bar">
+    <div class="top">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact US</a></li>
+        <li id="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+        <!---  <li id="card-icon"  class="cart"><i class="fa-solid fa-cart-shopping"></i></p></li>-->
+        <!---- <li class="profile"><i class="fa-solid fa-user"></i></li>-->
+        <form class="search-form" id="search-form">
+          <input type="search" id="search-box" placeholder="search Here..." />
+          <label for="search-box" class="fa fa-search"></label>
+        </form>
+      </ul>
+    </div>
+    <div>
+      <img class="fruit1" src="images/frit1.jpg" alt="fruits picture" />
+      <p class="title1">Fresh And Organic veggies and fruits For YOU</p>
+      <p class="paragraph">
+        Welcome to our grocery website, where convenience meets quality! Dive
+        into a world of fresh produce, pantry staples, and gourmet delights
+        from the comfort of your home. Our extensive selection boasts
+        everything from farm-fresh fruits and vegetables to artisanal cheeses
+        and premium meats, catering to every culinary craving. Browse through
+        our user-friendly interface, where intuitive search features and
+        personalized recommendations ensure a seamless shopping experience.
+        With secure online transactions and prompt doorstep delivery, we
+        strive to simplify your grocery shopping journey. Join our community
+        of food enthusiasts and embark on a gastronomic adventure with every
+        click. <span class="karibu">karibu Mama Mboga</span>
+      </p>
+      <img class="fruit2" src="images/frit2.jpg" alt="fruits picture" />
+    </div>
+    
+    <div class="ffeature" id="features">
+      <p class="our">our <span class="features">features</span></p>
+    </div>
+    <div class="card-container">
+      <div class="card" id="banana">
+        <h3><img class="aaa" src="images/card1.jpg" alt="veggies" /></h3>
+        <p class="line1">Fresh And Organic</p>
+        <p>
+          We offer a selection of high-quality fruits and vegetables
+          meticulously stored under refrigeration in our establishments.
+        </p>
+      </div>
+      <div id="cart-items" style="display: none;">
+        <h2>Cart Items</h2>
+        <ul id="selected-items-list"></ul>
+      </div>
+
+      <div class="card" id="apple">
+        <h3><img class="aaa" src="images/trsan.jpeg" alt="transport" /></h3>
+        <p class="line1">We offer free goods deliveries</p>
+        <p>
+          We provide complimentary transportation services in the vicinity of
+          Nairobi and Kiambu areas, ensuring convenient access for our valued
+          clientele.
+        </p>
+      </div>
+
+      <div class="card" id="orange">
+        <h3><img class="aaa" src="images/card3.jpeg" alt="payment" /></h3>
+        <p class="line1">Easy payment</p>
+        <p>
+          We offer cash on delivery method for customers
+          
+        </p> 
+      </div>
+    </div>
+
+    <div class="ffeature" id="product">
+      <p class="our">our <span class="features">product</span></p>
+      <div class="card-container" id="product-container"></div>
+    </div>
+
+    <div class="Reviews" id="reviews">
+      <p class="our">our <span class="features">Reviews</span></p>
+      <div class="reviews-container" id="reviews-container"></div>
+    </div>
+  </nav>
+  <div class="contact" id="contact">
+    <p class="our">contact <span class="features">us</span></p>
+    <div>
+      <p> <i id="gramlogo" class="fa-brands fa-instagram"></i><span id="instag"> Instagram</span></p>
+      <p class="gram"> @thee_MamaMboga</p>
+    </div>
+    <div>
+      <p> <i id="gramlogo" class="fa-brands fa-facebook"></i><span id="instag"> Facebook</span></p>
+      <p class="gram"> @thee_MamaMboga</p>
+    </div>
+    <div>
+      <p> <i id="gramlogo" class="fa-solid fa-envelope"></i><span id="instag"> E-mail</span></p>
+      <p class="gram"> MamaMbogacustomercare@gmail.com</p>
+    </div>
+    <div>
+      <p> <i id="gramlogo" class="fa-brands fa-x-twitter"></i><span id="instag"></span></p>
+      <p class="gram"> @MamaMboga_</p>   
+    </div>
+    <div>
+      <p> <i id="gramlogo" class="fa-solid fa-phone"></i><span id="instag"></span></p>
+      <p class="gram"> 0707499607</p>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+</html>

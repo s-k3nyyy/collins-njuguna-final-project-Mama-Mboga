@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {
+      "username": "collins Njuguna",
+      "rating": 4,
+      "comment": "Great service and quality products!"
+    },
+    {
+      "username": "meikan sankan",
+      "rating": 5,
+      "comment": "I love shopping here, the variety is amazing!"
+    },
+    {
+      "username": "Neema",
+      "rating": 3,
+      "comment": "Good experience overall, but could improve on delivery time."
+    }
+  ]
+}
