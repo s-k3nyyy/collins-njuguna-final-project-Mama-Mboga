@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .catch(error => console.error('Error fetching product data:', error));
 
   // Fetch data from 'reviews.json' for reviews
-  const reviewsContainer = document.getElementById('reviews-container');
+   const reviewsContainer = document.getElementById('reviews-container');
   fetch('reviews.json')
     .then(response => response.json())
     .then(data => {
@@ -51,16 +51,27 @@ document.addEventListener("DOMContentLoaded", function() {
         username.textContent = review.username;
         const rating = document.createElement('p');
         rating.textContent = `Rating: ${review.rating}`;
+
+        // Create stars based on rating
+        const stars = document.createElement('div');
+        stars.className = 'stars';
+        for (let i = 0; i < review.rating; i++) {
+          const star = document.createElement('span');
+          star.innerHTML = '&#9733;'; // Unicode for star symbol
+          stars.appendChild(star);
+        }
+
         const comment = document.createElement('p');
         comment.textContent = review.comment;
+
         card.appendChild(username);
         card.appendChild(rating);
+        card.appendChild(stars);
         card.appendChild(comment);
         reviewsContainer.appendChild(card);
       });
     })
     .catch(error => console.error('Error fetching reviews data:', error));
-
   // when add-to cart button has been clicked it alerts the user the certain item clicked has been added to cart
   document.addEventListener('click', (event) => {
     if (event.target?.classList.contains('add-to-cart')) {
@@ -74,33 +85,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
 // Function to handle search functionality
-//i researched on this search functionality sikuwa najua mwalimu 
+//i researched on this 
 document.getElementById('search-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission
-  const searchTerm = document.getElementById('search-box').value.toLowerCase(); // Get the search term
-  const productCards = document.querySelectorAll('.cardd'); // Select all product cards
-  let found = false; // Flag to track if the search term is found
+  event.preventDefault(); 
+  const searchTerm = document.getElementById('search-box').value.toLowerCase(); 
+  const productCards = document.querySelectorAll('.cardd'); 
+  let found = false; 
   
   productCards.forEach(card => {
-    const title = card.querySelector('h3').textContent.toLowerCase(); // Get the product title
+    const title = card.querySelector('h3').textContent.toLowerCase(); 
     if (title.includes(searchTerm)) {
-      // Scroll to the card
       card.scrollIntoView({ behavior: 'smooth' });
-      // Highlight the card with red background and smooth transition
       card.classList.add('search-match');
-      found = true; // Set flag to true if the search term is found
-      // Remove the red background after 1 second
-      setTimeout(() => {
-        card.classList.remove('search-match');
-      }, 1000);
+      found = true; 
+      setTimeout(() => card.classList.remove('search-match'), 1000);
     }
   });
 
   if (!found) {
-    // If search term is not found, show an alert
-    alert('sorry we dont have that item now  :( ');
+    alert('Sorry, we don\'t have that item right now :( ');
   }
 });
