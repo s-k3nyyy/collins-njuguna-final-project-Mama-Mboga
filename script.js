@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
 // Function to handle search functionality
 //i researched on this 
 document.getElementById('search-form').addEventListener('submit', function(event) {
