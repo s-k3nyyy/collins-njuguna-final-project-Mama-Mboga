@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     return card;
   }
 
-  // Fetches data from 'db.json' for products
+  // Fetches data from 'db.json' for prodcts
   fetch('db.json')
     .then(response => response.json())
     .then(data => {
@@ -82,10 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-// Function to handle search functionality
-//i researched on this 
+// Function to handle search functionality 
 document.getElementById('search-form').addEventListener('submit', function(event) {
   event.preventDefault(); 
   const searchTerm = document.getElementById('search-box').value.toLowerCase(); 
