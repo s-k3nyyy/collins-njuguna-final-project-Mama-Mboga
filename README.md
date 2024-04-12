@@ -18,16 +18,12 @@ Welcome to Mama Mboga Grocery Store, a web application that allows users to brow
 
 ## How to Use
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local computer or pc.
 2. Open the `index.html` file in your web browser to launch the application.
 3. Browse through the different sections of the website, including features, product listings, reviews, and contact information.
 4. Use the search bar to find specific products.
 5. Interact with the Add to Cart button to add items to your virtual shopping cart.
 6. Connect with Mama Mboga Grocery Store through the provided contact information.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 ## License
 
@@ -39,4 +35,5 @@ This project is licensed under the MIT License Copyright (c) 2018.
 - Special thanks to all contributors and users who provide feedback to help improve the application in the reviews section
 
 ## live-link
+
 https://github.com/s-k3nyyy/collins-njuguna-final-project-Mama-Mboga.git
