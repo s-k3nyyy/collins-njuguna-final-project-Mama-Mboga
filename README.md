@@ -35,5 +35,4 @@ This project is licensed under the MIT License Copyright (c) 2018.
 - Special thanks to all contributors and users who provide feedback to help improve the application in the reviews section
 
 ## live-link
-
-https://github.com/s-k3nyyy/collins-njuguna-final-project-Mama-Mboga.git
+https://s-k3nyyy.github.io/collins-njuguna-final-project-Mama-Mboga/
