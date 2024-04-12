@@ -27,6 +27,13 @@ nav ul li a {
     font-size: 18px;
     text-decoration: none;
     font-weight: 300;
+
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: 0.7s;
+
 }
 
 .top {
@@ -40,6 +47,11 @@ nav ul li a {
     box-shadow: 5px 0px 5px;
     margin-left: 390px;
     padding-left: 40px;
+}
+
+.top:hover {
+    color: red;
+    transition: 0.4s;
 }
 
 .logo {
@@ -128,16 +140,15 @@ nav ul li a {
 .search-form {
     border: 0px solid;
     position: absolute;
-    top: 100%;
+    top: 20%;
     margin-left: 620px;
     width: 16rem;
     height: 2.5rem;
-    background: #fff;
+    background: #ffffff00;
     border-radius: 0.5rem;
     overflow: hidden;
     display: flex;
     align-items: center;
-    box-shadow: var(-box-shadow);
     right: 1;
 }
 
@@ -148,6 +159,10 @@ nav ul li a {
     text-decoration: none;
     color: var(--black);
     padding: 0 1.5rem;
+}
+
+.search-form input {
+    border: red;
 }
 
 .search-form label {

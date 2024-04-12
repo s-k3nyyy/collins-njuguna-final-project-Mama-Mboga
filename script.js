@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(error => console.error('Error fetching product data:', error));
 
-  // Fetch data from 'reviews.json' for reviews
+  // Fetches data from 'reviews.json' for reviews
    const reviewsContainer = document.getElementById('reviews-container');
   fetch('reviews.json')
     .then(response => response.json())
@@ -52,12 +52,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const rating = document.createElement('p');
         rating.textContent = `Rating: ${review.rating}`;
 
-        // Create stars based on rating
+        // Creates stars based on rating
         const stars = document.createElement('div');
         stars.className = 'stars';
         for (let i = 0; i < review.rating; i++) {
           const star = document.createElement('span');
-          star.innerHTML = '&#9733;'; // Unicode for star symbol
+          star.innerHTML = '&#9733;'; // emoji star symbol
           stars.appendChild(star);
         }
 
